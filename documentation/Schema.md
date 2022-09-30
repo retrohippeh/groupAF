@@ -17,8 +17,25 @@ id
 avatar
 username
 cart
+admin
+purchaces
 
+## purchaces
+id
+userProducts
 
+## userProducts
+id
+products
+    product
+## Cart
+id
+user
+cartProducts
+
+## cartProduct
+id
+product
 ## Sessions
 id
 token
