@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+// import React from "react";
+import Footer from './component/Footer';
 import './App.css';
 import Navbar from './component/Navbar';
 
@@ -6,7 +7,8 @@ function App() {
   return (
     <div>
       <Navbar />
-    </div>
+      <Footer/>
+         </div>
   );
 }
 
