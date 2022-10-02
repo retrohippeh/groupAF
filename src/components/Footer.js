@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 export default function () {
   return (
@@ -51,7 +52,7 @@ export default function () {
           </div>
           <div className="flex gap-5">
             <a className="link link-hover ">Privacy</a>
-            <a className="link link-hover ">About</a>
+            <Link className="link link-hover " href="/about">About</Link>
           </div>
         </div>
       </footer>
