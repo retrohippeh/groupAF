@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const config = require('../config')
 
 const productSchema = new mongoose.Schema({
     //I believe IDs are created by MongoDB itself
@@ -22,8 +23,6 @@ productSchema.set('toJSON', {
 const Product = mongoose.model('Product', productSchema)
 
 //TODO: userSchema, purchaseSchema, userProductSchema, cartSchema, cartProductSchema, sessionsSchema
-
-
 
 const initDB = async () => {
     await mongoose
