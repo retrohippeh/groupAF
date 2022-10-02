@@ -8,7 +8,7 @@ export default function Navbar({ }: Props) {
       <img
         className='h-12 m-auto mt-3'
         src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png" alt="Logo" />
-      <div className="navbar bg-base-100">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
