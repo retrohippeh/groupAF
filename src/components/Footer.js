@@ -1,12 +1,13 @@
 import React from "react";
+import Link from 'next/link'
 
 export default function () {
   return (
-    <div id="FOOTER-START" className="border-y-2  flex flex-1  ">
+    <div id="FOOTER-START">
       <footer className="">
         <div
           id="FOOTER-TOP"
-          className="flex w-screen gap-14 justify-center mt-2 "
+          className="flex gap-14 justify-center mt-4"
         >
           <span className="footer-title">Socials</span>
 
@@ -51,7 +52,7 @@ export default function () {
           </div>
           <div className="flex gap-5">
             <a className="link link-hover ">Privacy</a>
-            <a className="link link-hover ">About</a>
+            <Link className="link link-hover " href="/about">About</Link>
           </div>
         </div>
       </footer>

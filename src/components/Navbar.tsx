@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -20,7 +21,7 @@ export default function Navbar({ }: Props) {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost normal-case text-xl">Store Name</a>
+          <Link href="/" className="btn btn-ghost normal-case text-xl">Store Name</Link>
         </div>
         <div className="navbar-end">
           <div className="dropdown dropdown-end">
