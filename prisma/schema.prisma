@@ -41,6 +41,7 @@ model Product {
     id                 String @id @default(cuid()) @map("_id") @db.ObjectId
     productName        String
     productPrice       Int?
+    productSalePrice   Int?
     productDescription String
     productArtist      String
     productPhoto       String
