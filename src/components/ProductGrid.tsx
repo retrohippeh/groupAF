@@ -2,11 +2,8 @@ import { Product } from 'data'
 import React from 'react'
 import ProductCard from './ProductCard'
 
-type Props = {
-  products: Array<Product>
-}
 
-export default function ProductGrid({products}: Props) {
+export default function ProductGrid({products}) {
   return (
         <>
         <div className="m-auto p-4 my-4 max-w-screen-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
