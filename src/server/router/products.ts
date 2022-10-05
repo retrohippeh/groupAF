@@ -1,10 +1,10 @@
 import { createRouter } from "./context";
+import { prisma } from "../db/client"
 
 export const productRouter = createRouter()
 .query("getProducts", {
-  async resolve({ctx}) {
-    let result = await ctx.prisma.product.findMany();
-    console.log(result)
+  async resolve() {
+    let result = await prisma.product.findMany({ take: 12 });
     return result;
   },
 });
